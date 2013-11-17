@@ -3,9 +3,13 @@ GEM
   specs:
     coderay (1.0.9)
     diff-lcs (1.2.4)
+    dotenv (0.9.0)
     fakefs (0.4.3)
     ffi (1.9.0-java)
-    jruby_sandbox_riddlr (0.1.16-java)
+    foreman (0.63.0-java)
+      dotenv (>= 0.7)
+      thor (>= 0.13.6)
+    jruby_sandbox_riddlr (0.1.17-java)
       fakefs
     json (1.8.1-java)
     method_source (0.8.2)
@@ -34,13 +38,15 @@ GEM
     slop (3.4.6)
     spoon (0.0.4)
       ffi
+    thor (0.18.1)
     tilt (1.4.1)
 
 PLATFORMS
   java
 
 DEPENDENCIES
-  jruby_sandbox_riddlr
+  foreman
+  jruby_sandbox_riddlr (= 0.1.17)
   json
   pry
   puma
